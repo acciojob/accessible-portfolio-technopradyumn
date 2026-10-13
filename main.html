@@ -1,16 +1,47 @@
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Accessible Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header>
+        <h1 role="heading">My Portfolio</h1>
+    </header>
 
+    <nav role="navigation" aria-label="Main navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#home">Home</a></li>
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <section id="about">
+            <img
+                role="img"
+                src="https://via.placeholder.com/200"
+                alt="Profile picture of the portfolio owner"
+            >
+
+            <p>
+                Hello! I am a developer passionate about building
+                accessible, user-friendly web applications.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>My Skills</h2>
+            <ul role="list">
+                <li role="listitem">HTML and CSS</li>
+                <li role="listitem">JavaScript</li>
+                <li role="listitem">React</li>
+            </ul>
+        </section>
+    </main>
 </body>
-
 </html>
